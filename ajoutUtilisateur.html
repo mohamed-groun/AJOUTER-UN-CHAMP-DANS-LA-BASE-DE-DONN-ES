@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Ajout </title>
+</head>
+<body style="background-color:powderblue;">
+<nav class="navbar"></nav>
+<form class="needs-validation container form-container" action="ajoutUtilisateur.php" method="post" novalidate>
+
+        <div class="col">
+            <label><b>CIN</b></label>
+            <input type="number" class="form-control" id="cin" name="cin" required>
+            <span class="cinmsg"> </span><br>
+        </div>
+        <div class="col">
+            <label ><b>NOM</b></label>
+            <input type="text" class="form-control" id="nom" name="nom" required>
+            <span class="nommsg"> </span><br>
+        </div>
+
+
+        <div class="col">
+            <label ><b>PRENOM</b></label>
+            <input type="text" class="form-control" id="prenom" name="prenom" required>
+            <span class="prenommsg"> </span><br>
+        </div>
+        <div class="col">
+            <label ><b>AGE</b></label>
+            <input type="number" class="form-control" id="age" name="age" required>
+            <span class="agemsg"> </span><br>
+        </div><br><br>
+
+<div class="row">
+    <button class="btn btn-primary col"  type="submit" id="bouton_envoi">INSERT</button>
+    <button class="btn btn-danger col" type="reset">RESET</button>
+</div>
+
+</form>
+
+</body>
+
+</html>
